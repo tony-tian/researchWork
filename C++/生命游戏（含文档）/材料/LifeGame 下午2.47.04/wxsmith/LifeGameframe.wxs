@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="LifeGameFrame">
+		<size>1280,960</size>
+		<focused>1</focused>
+		<parent_arg>0</parent_arg>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU</style>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+			<cols>100</cols>
+			<rows>100</rows>
+			<readonly>1</readonly>
+			<defaultrowsize>1</defaultrowsize>
+			<defaultcolsize>1</defaultcolsize>
+			<pos>48,24</pos>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="Start" variable="MenuItem3" member="yes">
+					<label>Start(normal)</label>
+					<accel>a</accel>
+					<handler function="OnNormalmode" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenu" name="ID_MENUITEM1" variable="MenuItem5" member="yes">
+					<label>Start..</label>
+					<object class="wxMenuItem" name="StillLife" variable="MenuItem6" member="yes">
+						<label>StillLifeForm</label>
+						<handler function="OnStillLifeWorld" entry="EVT_MENU" />
+					</object>
+				</object>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu3" member="yes">
+				<label>Edit..</label>
+				<object class="wxMenuItem" name="stepIn" variable="MenuItem4" member="yes">
+					<label>step in</label>
+					<accel>s</accel>
+					<handler function="OnStepIn" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="continue1" variable="MenuItem7" member="yes">
+					<label>continue(Auto)</label>
+					<handler function="OnContinue" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="changeSpeed" variable="MenuItem8" member="yes">
+					<label>Change TimeSpeed</label>
+					<handler function="OnChangeSpeed" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxTextEntryDialog" name="ID_TEXTENTRYDIALOG1" variable="TextEntryDialog1" member="yes" />
+	</object>
+</wxsmith>

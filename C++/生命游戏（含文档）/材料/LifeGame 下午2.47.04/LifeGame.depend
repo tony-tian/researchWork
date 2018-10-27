@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1467434440 source:/Users/tianyizhuang/Desktop/code/C:C++_code/LifeGame/LifeGameApp.cpp
+	"LifeGameApp.h"
+	"LifeGameMain.h"
+	<wx/image.h>
+
+1467434440 /Users/tianyizhuang/Desktop/code/C:C++_code/LifeGame/LifeGameApp.h
+	<wx/app.h>
+
+1467703777 /Users/tianyizhuang/Desktop/code/C:C++_code/LifeGame/LifeGameMain.h
+	<wx/timer.h>
+	<wx/menu.h>
+	<wx/textdlg.h>
+	<wx/grid.h>
+	<wx/frame.h>
+	<wx/statusbr.h>
+
+1467705712 source:/Users/tianyizhuang/Desktop/code/C:C++_code/LifeGame/LifeGameMain.cpp
+	"LifeGameMain.h"
+	<wx/msgdlg.h>
+	<cstdlib>
+	<math.h>
+	<wx/colour.h>
+	<iostream>
+	<time.h>
+	<wx/dc.h>
+	<wx/dcclient.h>
+	<wx/wx.h>
+	<wx/intl.h>
+	<wx/string.h>
+
